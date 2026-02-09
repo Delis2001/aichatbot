@@ -1,0 +1,53 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "aichatbot-99dec",
+          "appId": "1:444175837573:android:3faac866b8dcaa303b3cec",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "aichatbot-99dec",
+          "configurations": {
+            "android": "1:444175837573:android:3faac866b8dcaa303b3cec",
+            "ios": "1:444175837573:ios:ba2fc8a4e78363493b3cec",
+            "macos": "1:444175837573:ios:ba2fc8a4e78363493b3cec",
+            "web": "1:444175837573:web:7688d969f0ae28ae3b3cec",
+            "windows": "1:444175837573:web:6202f8f43b7262f33b3cec"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
