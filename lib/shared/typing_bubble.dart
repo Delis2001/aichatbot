@@ -46,7 +46,7 @@ class _DotState extends State<_Dot> with SingleTickerProviderStateMixin {
     controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 600),
-    )..repeat(reverse: true);
+    )..repeat(reverse: false);
 
     Future.delayed(Duration(milliseconds: widget.delay), () {
       if (mounted) controller.forward();
